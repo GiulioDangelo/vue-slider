@@ -21,7 +21,7 @@
                     <img v-for="(image, index) in slides" 
                     :key="index" 
                     :src="image.image"
-                    :class="{active: index == activeIndex}"
+                    :class="index == activeIndex ? 'active' : 'hide'">
                     >
 
                 </div>
@@ -34,7 +34,7 @@
                         <img v-for="(image, index) in slides" 
                         :key="index" 
                         :src="image.image"
-                        :class="{active: index == activeIndex}">
+                        :class="index == activeIndex ? 'thumb.active' : ''">
                     </div>
 
                 </div>
